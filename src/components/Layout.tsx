@@ -1,5 +1,5 @@
 import { Outlet, Link, useLocation } from 'react-router-dom'
-import { Home, Package, User, PlusCircle } from 'lucide-react'
+import { Home, Package, User, PlusCircle, MapPin } from 'lucide-react'
 
 export default function Layout() {
   const location = useLocation()
@@ -52,6 +52,16 @@ export default function Layout() {
               <PlusCircle size={24} />
             </div>
             <span className="text-xs mt-1">Nouvelle</span>
+          </Link>
+
+          <Link
+            to="/tracking"
+            className={`flex flex-col items-center justify-center flex-1 h-full ${
+              isActive('/tracking') ? 'text-primary-600' : 'text-gray-600'
+            }`}
+          >
+            <MapPin size={24} />
+            <span className="text-xs mt-1">Suivi</span>
           </Link>
 
           <Link

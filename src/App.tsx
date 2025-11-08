@@ -8,6 +8,7 @@ import Orders from './pages/Orders'
 import OrderDetails from './pages/OrderDetails'
 import Profile from './pages/Profile'
 import Subscriptions from './pages/Subscriptions'
+import Tracking from './pages/Tracking'
 import Layout from './components/Layout'
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path="/orders" element={<Orders />} />
             <Route path="/orders/:id" element={<OrderDetails />} />
             <Route path="/subscriptions" element={<Subscriptions />} />
+            <Route path="/tracking" element={<Tracking />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
