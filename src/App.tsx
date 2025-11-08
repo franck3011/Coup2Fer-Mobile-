@@ -7,6 +7,7 @@ import NewOrder from './pages/NewOrder'
 import Orders from './pages/Orders'
 import OrderDetails from './pages/OrderDetails'
 import Profile from './pages/Profile'
+import Subscriptions from './pages/Subscriptions'
 import Layout from './components/Layout'
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="/new-order" element={<NewOrder />} />
             <Route path="/orders" element={<Orders />} />
             <Route path="/orders/:id" element={<OrderDetails />} />
+            <Route path="/subscriptions" element={<Subscriptions />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>

@@ -70,7 +70,7 @@ export default function Dashboard() {
               <Link
                 key={order.id}
                 to={`/orders/${order.id}`}
-                className="card hover:shadow-md transition-shadow"
+                className="block bg-white rounded-xl shadow-sm border border-gray-100 p-4 hover:shadow-md transition-shadow"
               >
                 <div className="flex items-center justify-between mb-3">
                   <span className="font-semibold text-gray-900">#{order.id.slice(0, 8)}</span>
@@ -94,15 +94,17 @@ export default function Dashboard() {
       </div>
 
       {/* Actions rapides */}
-      <div className="card bg-primary-50 border-primary-200">
+      <div className="card bg-gradient-to-br from-primary-50 to-blue-50 border-primary-200 hover:shadow-lg transition-shadow">
         <h3 className="font-bold text-gray-900 mb-3 flex items-center gap-2">
-          <TrendingUp size={20} />
+          <TrendingUp size={20} className="text-primary-600" />
           Envie d'économiser ?
         </h3>
         <p className="text-sm text-gray-600 mb-4">
           Profitez de nos abonnements pour bénéficier de tarifs préférentiels !
         </p>
-        <button className="btn-primary w-full">Découvrir les abonnements</button>
+        <Link to="/subscriptions" className="btn-primary w-full block text-center">
+          Découvrir les abonnements
+        </Link>
       </div>
     </div>
   )
