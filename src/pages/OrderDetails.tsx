@@ -11,7 +11,7 @@ export default function OrderDetails() {
 
   if (!order) {
     return (
-      <div className="p-4">
+      <div className="px-4 py-6">
         <div className="card text-center py-12">
           <Package className="mx-auto text-gray-400 mb-4" size={64} />
           <p className="text-gray-600">Commande introuvable</p>
@@ -49,7 +49,7 @@ export default function OrderDetails() {
   const currentStepIndex = statusSteps.findIndex(step => step.key === order.status)
 
   return (
-    <div className="p-4 pb-20">
+    <div className="px-4 py-6 pb-20">
       {/* Header */}
       <div className="flex items-center gap-3 mb-6">
         <button

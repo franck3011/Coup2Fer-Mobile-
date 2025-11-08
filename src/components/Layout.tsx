@@ -17,7 +17,7 @@ export default function Layout() {
       </header>
 
       {/* Contenu principal */}
-      <main className="max-w-lg mx-auto">
+      <main className="max-w-lg mx-auto px-0">
         <Outlet />
       </main>
 

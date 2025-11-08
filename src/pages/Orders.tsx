@@ -44,7 +44,7 @@ export default function Orders() {
   }
 
   return (
-    <div className="p-4">
+    <div className="px-4 py-6">
       {/* Header */}
       <h1 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
         <Package size={28} />

@@ -11,7 +11,7 @@ export default function Profile() {
   if (!user) return null
 
   return (
-    <div className="p-4 space-y-6">
+    <div className="px-4 py-6 space-y-6">
       {/* Header profil */}
       <div className="card bg-gradient-to-r from-primary-500 to-primary-600 text-white">
         <div className="flex items-center gap-4">
